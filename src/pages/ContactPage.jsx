@@ -40,14 +40,14 @@ const ContactPage = () => {
                     <h3 className="text-lg font-semibold mb-1">Phone</h3>
                     <p className="text-slate-600 mb-1">Customer Service:</p>
                     <p className="text-lg font-medium">
-                      <a href="tel:+18001234567" className="text-blue-600 hover:text-blue-800">
-                        1-800-123-4567
+                      <a href="tel:+ 18002022413" className="text-blue-600 hover:text-blue-800">
+                      18002022413
                       </a>
                     </p>
                     <p className="text-slate-600 mt-2 mb-1">Emergency Service (24/7):</p>
                     <p className="text-lg font-medium">
-                      <a href="tel:+18009876543" className="text-blue-600 hover:text-blue-800">
-                        1-800-987-6543
+                      <a href="tel:+ 18002022413" className="text-blue-600 hover:text-blue-800">
+                      18002022413
                       </a>
                     </p>
                   </div>
@@ -62,13 +62,15 @@ const ContactPage = () => {
                     <p className="text-slate-600 mb-1">General Inquiries:</p>
                     <p className="text-lg font-medium">
                       <a href="mailto:info@appliancepro.com" className="text-blue-600 hover:text-blue-800">
-                        info@appliancepro.com
+                      at@atyourservicesupport.com
+
+
                       </a>
                     </p>
                     <p className="text-slate-600 mt-2 mb-1">Customer Support:</p>
                     <p className="text-lg font-medium">
                       <a href="mailto:support@appliancepro.com" className="text-blue-600 hover:text-blue-800">
-                        support@appliancepro.com
+                      at@atyourservicesupport.com
                       </a>
                     </p>
                   </div>
@@ -82,8 +84,7 @@ const ContactPage = () => {
                     <h3 className="text-lg font-semibold mb-1">Address</h3>
                     <p className="text-slate-600 mb-1">Main Office:</p>
                     <p className="text-lg">
-                      123 Repair Street<br />
-                      Appliance City, AC 12345
+                     Mumbai
                     </p>
                   </div>
                 </div>
@@ -94,10 +95,10 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Business Hours</h3>
-                    <p className="text-slate-600 mb-1">Office Hours:</p>
-                    <p className="mb-2">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    
                     <p className="text-slate-600 mb-1">Service Hours:</p>
-                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                    <p className="mb-2">Sunday-Saturday: 8:00 AM - 6:00 PM</p>
+                 
                     <p className="text-slate-600 mt-2">
                       <strong>Note:</strong> Emergency services are available 24/7
                     </p>

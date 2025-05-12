@@ -104,7 +104,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/services/ac-repair" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  AC Repair Services
+                  AC Repair & Maintenance Services
                 </Link>
               </li>
               <li>
@@ -113,13 +113,23 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/washing-machine-repair" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  Washing Machine Repair Services
+                <Link to="services/microwave-oven-repair" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  Microwave Oven Repair Services
                 </Link>
               </li>
               <li>
-                <Link to="/services/microwave-oven-repair" className="text-slate-300 hover:text-blue-400 transition-colors">
-                  Microwave Oven Repair Services
+                <Link to="/services/kitchen-chimney-clearning-and-maintenance" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  Kitchen Chimney Clearning and Maintenance
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/washing-machine-repair" className="text-slate-300 hover:text-blue-400 transition-colors">
+                 Washing Machine Repair
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/cctv" className="text-slate-300 hover:text-blue-400 transition-colors">
+                  CCTV
                 </Link>
               </li>
             </ul>
@@ -133,8 +143,8 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-slate-300">Call Us:</p>
-                  <a href="tel:+18001234567" className="text-white hover:text-blue-400 transition-colors">
-                    1-800-123-4567
+                  <a href="tel:+18002022413" className="text-white hover:text-blue-400 transition-colors">
+                    18002022413
                   </a>
                 </div>
               </li>
@@ -142,8 +152,8 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-slate-300">Email:</p>
-                  <a href="mailto:info@appliancepro.com" className="text-white hover:text-blue-400 transition-colors">
-                    info@appliancepro.com
+                  <a href="mailto:at@atyourservicesupport.com" className="text-white hover:text-blue-400 transition-colors">
+                    at@atyourservicesupport.com
                   </a>
                 </div>
               </li>
@@ -152,7 +162,7 @@ const Footer = () => {
                 <div>
                   <p className="text-slate-300">Address:</p>
                   <p className="text-white">
-                    123 Repair Street, Appliance City, AC 12345
+                    Mumbai
                   </p>
                 </div>
               </li>
@@ -161,7 +171,7 @@ const Footer = () => {
                 <div>
                   <p className="text-slate-300">Business Hours:</p>
                   <p className="text-white">
-                    Mon-Sat: 8:00 AM - 8:00 PM
+                    Sun-Sat: 8:00 AM - 8:00 PM
                   </p>
                 </div>
               </li>
@@ -170,19 +180,35 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="pt-6 border-t border-slate-700 text-center md:flex md:justify-between md:items-center">
-          <p className="text-slate-400 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} AppliancePro. All Rights Reserved.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Link to="/privacy-policy" className="text-slate-400 hover:text-blue-400 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-use" className="text-slate-400 hover:text-blue-400 transition-colors">
-              Terms of Use
-            </Link>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold mb-4"> Refund Policy</h3>
+            <p className="text-gray-400">
+              At AtYourServiceSupport.com, refunds are available if we cannot provide a scheduled service or fail to meet agreed-upon standards.
+
+              No refunds will be issued for completed services, customer no-shows, or failure to meet service requirements.
+
+              Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [1800-202-2413] for assistance.
+            </p>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8">
+            <p className="text-sm text-gray-400 mb-4">
+              Disclaimer: At Your Service Support is an independent service provider and not an authorized dealer or representative of any brand. All trademarks and brand names belong to their respective owners.
+            </p>
+            <p className="text-sm text-gray-400 mb-4">
+              Our services are not affiliated with or endorsed by any manufacturer, and we are not responsible for warranty voidance or brand-specific claims. For official support, please contact the authorized service center.
+            </p>
+            <p className="text-sm text-gray-400 mb-4">
+              All products are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation/endorsement by them with us.
+            </p>
+            <p className="text-sm text-gray-500">
+              Copyright © At Your Service Support {new Date().getFullYear()} | Powered by At Your Service Support
+            </p>
           </div>
         </div>
+
       </div>
     </footer>
   );

@@ -14,7 +14,7 @@ const HeroSection = ({
   ]
 }) => {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative max-w-screen py-16 md:py-24 overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
@@ -25,10 +25,10 @@ const HeroSection = ({
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/70"></div>
       </div>
       
-      <div className="container relative z-10">
+      <div className="container max-w-screen relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <h1 className="text-4xl  text-blue-600  p-2 rounded md:text-5xl font-bold mb-4 leading-tight">
               {title}
             </h1>
             <p className="text-lg text-blue-100 mb-8 max-w-lg">
@@ -51,65 +51,14 @@ const HeroSection = ({
               <Link to="/contact" className="btn btn-primary">
                 Book a Service
               </Link>
-              <a href="tel:+18001234567" className="btn bg-white text-blue-600 hover:bg-blue-50">
+              <a href="tel:+18002022413" className="btn bg-white text-blue-600 hover:bg-blue-50">
                 Call Now
               </a>
             </div>
           </div>
           
           {/* Form card - can be hidden on smaller screens if space is tight */}
-          <div className="bg-white p-6 rounded-lg shadow-lg hidden lg:block">
-            <h3 className="text-xl font-semibold mb-4">Request a Service Call</h3>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="hero-name" className="block text-sm font-medium text-slate-700 mb-1">
-                  Full Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="hero-name"
-                  className="input"
-                  placeholder="Your full name"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="hero-phone" className="block text-sm font-medium text-slate-700 mb-1">
-                  Phone Number <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="hero-phone"
-                  className="input"
-                  placeholder="Your phone number"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="hero-service" className="block text-sm font-medium text-slate-700 mb-1">
-                  Service Required
-                </label>
-                <select
-                  id="hero-service"
-                  className="input"
-                >
-                  <option value="">Select a service</option>
-                  <option value="ac-repair">AC Repair</option>
-                  <option value="refrigerator-repair">Refrigerator Repair</option>
-                  <option value="washing-machine-repair">Washing Machine Repair</option>
-                  <option value="microwave-oven-repair">Microwave Oven Repair</option>
-                </select>
-              </div>
-              
-              <button
-                type="submit"
-                className="btn btn-primary w-full flex items-center justify-center"
-              >
-                Get Free Quote
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </button>
-            </form>
-          </div>
+          
         </div>
       </div>
     </section>

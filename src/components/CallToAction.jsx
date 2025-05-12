@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const CallToAction = ({
   title = "Need Immediate Assistance?",
   description = "Our expert technicians are available 24/7 to solve your appliance issues.",
-  phoneNumber = "1-800-123-4567"
+  phoneNumber = " 18002022413"
 }) => {
   return (
     <section className="bg-blue-600 py-16">

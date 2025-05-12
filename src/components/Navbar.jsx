@@ -2,20 +2,29 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Wrench } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
+import { ChevronRight } from 'lucide-react';
 
 const Navbar = ({ isScrolled }) => {
+  const customLabels = {
+    "Washing Machine Repair": "Washing Machine Repair Service",
+    "AC Repair & Maintenance": "AC Repair",
+    "Refrigerator Repair": "Refrigerator Repair Service",
+    "Microwave Oven Repair": "Microwave Oven Repair Service",
+    "Kitchen Chimney Clearning and Maintenance": "Kitchen Chimney Service",
+    "CCTV": "CCTV Installation Service"
+  };
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState(null);
-
+  const [hoveredService, setHoveredService] = useState(null);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header
-      className={`sticky top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className={`sticky top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-3'
+        }`}
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
@@ -44,59 +53,68 @@ const Navbar = ({ isScrolled }) => {
           </NavLink>
 
           {/* Services Dropdown */}
-          <div
-            className="relative group"
-            onMouseEnter={() => setHoveredCategory('services')}
-            onMouseLeave={() => setHoveredCategory(null)}
-          >
-            <button className="nav-link flex items-center">
-              Services <ChevronDown className="ml-1 h-4 w-4" />
-            </button>
-            {hoveredCategory === 'services' && (
-              <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-md py-2 z-50">
-                {Object.keys(servicesData).map((serviceType) => (
-                  <Link
-                    key={serviceType}
-                    to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
-                  >
-                    {serviceType}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          <NavLink to="/services"
+            className={({ isActive }) =>
+              isActive ? 'nav-link nav-link-active' : 'nav-link'
+            } >
+            <div className="  items-center">
+              <div className="flex justify-between ">
+                <div className="flex">
+                  {/* Other nav items */}
 
-          {/* Brands Dropdown */}
-          <div
-            className="relative group"
-            onMouseEnter={() => setHoveredCategory('brands')}
-            onMouseLeave={() => setHoveredCategory(null)}
-          >
-            <button className="nav-link flex items-center">
-              Brands <ChevronDown className="ml-1 h-4 w-4" />
-            </button>
-            {hoveredCategory === 'brands' && (
-              <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-md py-2 z-50">
-                {Object.entries(servicesData).map(([serviceType, brands]) => (
-                  <div key={serviceType} className="px-4 py-2">
-                    <div className="font-medium text-slate-900 mb-1">{serviceType}</div>
-                    <div className="pl-2 space-y-1">
-                      {brands.map((brand) => (
-                        <Link
-                          key={brand}
-                          to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}/${brand.toLowerCase().replace(/\s+/g, '-')}`}
-                          className="block text-sm text-slate-600 hover:text-blue-600 py-1"
-                        >
-                          {brand}
-                        </Link>
-                      ))}
-                    </div>
+                  {/* Services dropdown */}
+                  <div
+                    className="relative group"
+                    onMouseEnter={() => setHoveredCategory('services')}
+                    onMouseLeave={() => setHoveredCategory(null)}
+                  >
+                    <button className="nav-link flex ">
+                      Services
+                    </button>
+
+                    {/* First level dropdown - Services */}
+                    {hoveredCategory === 'services' && (
+                      <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-md  z-50">
+                        {Object.keys(servicesData).map((serviceType) => (
+                          <div
+                            key={serviceType}
+                            className="relative group"
+                            onMouseEnter={() => setHoveredService(serviceType)}
+                            onMouseLeave={() => setHoveredService(null)}
+                          >
+                            <Link
+                              to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}`}
+                              className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
+                            >
+                              <span>{serviceType}</span>
+                              <ChevronRight className="h-4 w-4" />
+                            </Link>
+
+                            {/* Second level dropdown - Brands */}
+                            {hoveredService === serviceType && (
+                              <div className="absolute top-0 left-full w-64 bg-white shadow-lg rounded-md py-2 ml-1 z-50">
+                                {servicesData[serviceType].map((brand) => (
+                                  <Link
+                                    key={brand}
+                                    to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}/${brand.toLowerCase().replace(/\s+/g, '-')}`}
+                                    className="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
+                                  >
+                                    {customLabels[hoveredService]
+                                      ? `${brand} ${customLabels[hoveredService].replace(/Service$/, '')} Service`
+                                      : `${brand} Repair Service`}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                ))}
+                </div>
               </div>
-            )}
-          </div>
+            </div>
+          </NavLink>
 
           <NavLink
             to="/contact"
@@ -106,6 +124,7 @@ const Navbar = ({ isScrolled }) => {
           >
             Contact Us
           </NavLink>
+
           <NavLink
             to="/testimonials"
             className={({ isActive }) =>
@@ -114,15 +133,31 @@ const Navbar = ({ isScrolled }) => {
           >
             Testimonials
           </NavLink>
+          <NavLink
+            to="/terms-of-use"
+            className={({ isActive }) =>
+              isActive ? 'nav-link nav-link-active' : 'nav-link'
+            }
+          >
+            Terms of Use
+          </NavLink>
+          <NavLink
+            to="/Privacy-Policy"
+            className={({ isActive }) =>
+              isActive ? 'nav-link nav-link-active' : 'nav-link'
+            }
+          >
+            Privacy Policy
+          </NavLink>
         </nav>
 
         {/* Call Button */}
         <a
-          href="tel:+18001234567"
+          href="tel:+18002022413"
           className="hidden md:flex items-center gap-2 btn btn-primary"
         >
           <Phone className="h-4 w-4" />
-          <span>1-800-123-4567</span>
+          <span>18002022413</span>
         </a>
 
         {/* Mobile Menu Button */}
@@ -163,38 +198,67 @@ const Navbar = ({ isScrolled }) => {
             </NavLink>
 
             {/* Mobile Services Menu */}
-            <div className="space-y-2">
-              <p className="font-medium px-3 text-slate-900">Services</p>
-              {Object.keys(servicesData).map((serviceType) => (
-                <div key={serviceType} className="ml-4 space-y-2">
-                  <NavLink
-                    to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}`}
-                    className={({ isActive }) =>
-                      isActive ? 'block nav-link-active' : 'block nav-link'
-                    }
-                    onClick={toggleMenu}
-                  >
-                    {serviceType}
-                  </NavLink>
-                  <div className="ml-4 space-y-1">
-                    {servicesData[serviceType].map((brand) => (
-                      <NavLink
-                        key={brand}
-                        to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}/${brand.toLowerCase().replace(/\s+/g, '-')}`}
-                        className={({ isActive }) =>
-                          isActive
-                            ? 'block text-sm nav-link-active'
-                            : 'block text-sm text-slate-500 hover:text-blue-600'
-                        }
-                        onClick={toggleMenu}
-                      >
-                        {brand}
-                      </NavLink>
-                    ))}
+            <NavLink to="/services"
+              className={({ isActive }) =>
+                isActive ? 'nav-link nav-link-active' : 'nav-link'
+              } >
+              <div className="  items-center">
+                <div className="flex justify-between ">
+                  <div className="flex">
+
+                    <div
+                      className="relative group"
+                      onMouseEnter={() => setHoveredCategory('services')}
+                      onMouseLeave={() => setHoveredCategory(null)}
+                    >
+                      <button className="nav-link flex ">
+                        Services
+                      </button>
+
+                      {/* First level dropdown - Services */}
+                      {hoveredCategory === 'services' && (
+                        <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-md  z-50">
+                          {Object.keys(servicesData).map((serviceType) => (
+                            <div
+                              key={serviceType}
+                              className="relative group"
+                              onMouseEnter={() => setHoveredService(serviceType)}
+                              onMouseLeave={() => setHoveredService(null)}
+                            >
+                              <Link
+                                to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}`}
+                                className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
+                              >
+                                <span>{serviceType}</span>
+                                <ChevronRight className="h-4 w-4" />
+                              </Link>
+
+                              {/* Second level dropdown - Brands */}
+                              {hoveredService === serviceType && (
+                                <div className="absolute top-0 left-full w-64 bg-white shadow-lg rounded-md py-2 ml-1 z-50">
+                                  {servicesData[serviceType].map((brand) => (
+                                    <Link
+                                      key={brand}
+                                      to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}/${brand.toLowerCase().replace(/\s+/g, '-')}`}
+                                      className="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
+                                    >
+                                       {customLabels[hoveredService]
+                                      ? `${brand} ${customLabels[hoveredService].replace(/Service$/, '')} Service`
+                                      : `${brand} Repair Service`}
+                                    </Link>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            </NavLink>
+
 
             <NavLink
               to="/contact"
@@ -217,12 +281,12 @@ const Navbar = ({ isScrolled }) => {
 
             {/* Mobile Call Button */}
             <a
-              href="tel:+18001234567"
+              href="tel:+18002022413"
               className="flex items-center justify-center gap-2 btn btn-primary w-full"
               onClick={toggleMenu}
             >
               <Phone className="h-4 w-4" />
-              <span>1-800-123-4567</span>
+              <span>18002022413</span>
             </a>
           </div>
         </div>

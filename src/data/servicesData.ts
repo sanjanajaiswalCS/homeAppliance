@@ -1,6 +1,6 @@
 // Service categories and brands
-export const servicesData: Record<string, string[]> = {
-  "AC Repair": [
+export const servicesData= {
+  "AC Repair & Maintenance": [
     "Haier",
     "Voltas",
     "Mitsubishi",
@@ -47,6 +47,22 @@ export const servicesData: Record<string, string[]> = {
     "Haier",
     "Samsung",
     "LG"
+  ],
+  "Kitchen Chimney Clearning and Maintenance": [
+    "Elica",
+    "Faber",
+    "Hindware",
+    "Bosch",
+    "Siemens",
+    "Hafele",
+    "Prestige",
+    "Kaff",
+    "Beyond",
+    "Whirlpool",
+    "Pigeon"
+  ],
+  "CCTV": [
+
   ]
 };
 
@@ -80,18 +96,18 @@ export const getBrandsForService = (serviceType: string): string[] => {
 // Get all service pages for sitemap
 export const getAllServicePages = (): { service: string, brand: string }[] => {
   const pages: { service: string, brand: string }[] = [];
-  
+
   Object.keys(servicesData).forEach(service => {
     const serviceUrl = formatForUrl(service);
-    
+
     // Add the main service page
     pages.push({ service: serviceUrl, brand: "" });
-    
+
     // Add each brand page
     servicesData[service].forEach(brand => {
       pages.push({ service: serviceUrl, brand: formatForUrl(brand) });
     });
   });
-  
+
   return pages;
 };

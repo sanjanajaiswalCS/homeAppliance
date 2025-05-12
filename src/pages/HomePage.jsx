@@ -46,20 +46,20 @@ const HomePage = () => {
         description="AppliancePro offers professional repair services for AC, refrigerator, washing machine, and microwave oven. 24/7 emergency service available."
       />
 
-      {/* Hero Section */}
-      <HeroSection
-        title="Expert Appliance Repair Services Near You"
+      <HeroSection 
+        title="Professional Home Appliance Repair & Services at Your Doorstep
+"
         subtitle="Professional and reliable repairs for all major appliance brands. Fast service, guaranteed satisfaction."
         image="https://images.pexels.com/photos/3637739/pexels-photo-3637739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
 
-      {/* Services Section */}
+     
       <section className="section bg-slate-50">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Repair Services</h2>
             <p className="text-slate-600 max-w-3xl mx-auto">
-              We provide comprehensive repair solutions for all major home appliances. Our expert technicians are trained to fix any issues with your appliances quickly and efficiently.
+              we comprehensive repair solutions for all major home appliances. Our expert technicians are trained to fix any issues with your appliances quickly and efficiently.
             </p>
           </div>
 
