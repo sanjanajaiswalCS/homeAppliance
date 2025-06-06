@@ -59,10 +59,10 @@ const Navbar = ({ isScrolled }) => {
             onMouseEnter={() => setHoveredCategory('services')}
             onMouseLeave={() => setHoveredCategory(null)}
           >
-            <button className="nav-link flex items-center">
+            <NavLink   to="/service" className="nav-link flex items-center">
               Services
               <ChevronDown className="ml-1 h-4 w-4" />
-            </button>
+            </NavLink>
 
             {/* First level dropdown - Services */}
             {hoveredCategory === 'services' && (
