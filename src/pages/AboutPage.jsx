@@ -103,64 +103,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team */}
-      <section className="section">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Expert Team</h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Our technicians are the heart of our business. Each team member is certified, experienced, and committed to providing exceptional service.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-custom border border-slate-100">
-              <img 
-                src="https://images.pexels.com/photos/8961255/pexels-photo-8961255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="John Doe" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">John Doe</h3>
-                <p className="text-blue-600 font-medium mb-3">Lead Technician</p>
-                <p className="text-slate-600">
-                  With 15+ years of experience, John specializes in refrigeration systems and complex diagnostic challenges.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-custom border border-slate-100">
-              <img 
-                src="https://images.pexels.com/photos/8106699/pexels-photo-8106699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Jane Smith" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Jane Smith</h3>
-                <p className="text-blue-600 font-medium mb-3">HVAC Specialist</p>
-                <p className="text-slate-600">
-                  Jane brings 10 years of dedicated experience in air conditioning and heating systems repair and maintenance.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-custom border border-slate-100">
-              <img 
-                src="https://images.pexels.com/photos/8102739/pexels-photo-8102739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Robert Johnson" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Robert Johnson</h3>
-                <p className="text-blue-600 font-medium mb-3">General Appliance Expert</p>
-                <p className="text-slate-600">
-                  Robert excels in diagnosing and repairing a wide range of home appliances with precision and efficiency.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Our Commitment */}
       <section className="section bg-slate-50">
         <div className="container">

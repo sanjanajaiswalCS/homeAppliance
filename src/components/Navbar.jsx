@@ -53,7 +53,7 @@ const Navbar = ({ isScrolled }) => {
           </NavLink>
 
           {/* Services Dropdown */}
-          <NavLink to="/services"
+          <NavLink to="/service"
             className={({ isActive }) =>
               isActive ? 'nav-link nav-link-active' : 'nav-link'
             } >
@@ -198,7 +198,7 @@ const Navbar = ({ isScrolled }) => {
             </NavLink>
 
             {/* Mobile Services Menu */}
-            <NavLink to="/services"
+            <NavLink to="/service"
               className={({ isActive }) =>
                 isActive ? 'nav-link nav-link-active' : 'nav-link'
               } >

@@ -10,7 +10,7 @@ import TermsOfUsePage from './pages/TermsOfUsePage';
 import ServicePage from './pages/ServicePage';
 import ServiceBrandPage from './pages/ServiceBrandPage';
 import NotFoundPage from './pages/NotFoundPage';
-
+import Service from './pages/Service';
 function App() {
   return (
     <Routes>
@@ -24,6 +24,7 @@ function App() {
         <Route path="services/:serviceType" element={<ServicePage />} />
         <Route path="services/:serviceType/:brand" element={<ServiceBrandPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/service" element={<Service />} />
       </Route>
     </Routes>
   );

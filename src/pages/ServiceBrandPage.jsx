@@ -24,7 +24,7 @@ const ServiceBrandPage = () => {
     fetchServices();
   }, [brandId]);
 
-  if (loading) return <LoadingSpinner />;
+  
 
   return (
     <div className="p-4">
