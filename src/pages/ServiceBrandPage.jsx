@@ -110,6 +110,28 @@ const serviceData = {
       "Data recovery services"
     ]
   },
+  "refrigerator-repair": {
+  displayName: "Refrigerator Repair",
+  image: "https://images.unsplash.com/photo-1581574200000-1c1c1c1c1c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+  description:
+    "Expert refrigerator repair services to ensure your appliance runs efficiently and keeps your food fresh. Our technicians are trained to handle all major brands.",
+  problems: [
+    "Not cooling properly",
+    "Excessive frost build-up",
+    "Water leakage",
+    "Strange noises",
+    "Door seal issues",
+    "Lights not working",
+    "Temperature fluctuations",
+  ],
+  benefits: [
+    "Same-day service available",
+    "Genuine replacement parts",
+    "No hidden fees",
+    "Senior discounts available",
+    "Eco-friendly repair options"
+  ]
+},
 };
 
 const ServiceBrandPage = () => {

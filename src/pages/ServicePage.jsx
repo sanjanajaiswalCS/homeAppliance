@@ -162,7 +162,10 @@ const ServicePage = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
+              <p className="text-center text-sky-400">
               {currentService.title}
+              </p>
+            
             </motion.h1>
             
             <motion.p 
