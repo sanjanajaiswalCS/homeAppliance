@@ -50,40 +50,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* Customer Success Story */}
-      <section className="section bg-slate-50">
-        <div className="container">
-          <div className="mb-12 max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Customer Success Stories</h2>
-            <p className="text-slate-600">
-              Learn about some of our most challenging repairs and how we helped our customers.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-custom max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="md:w-1/3">
-                <img
-                  src="https://images.pexels.com/photos/5699720/pexels-photo-5699720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Satisfied customer with repaired refrigerator"
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-              </div>
-              <div className="md:w-2/3">
-                <h3 className="text-2xl font-bold mb-3">The Case of the Mysterious Leak</h3>
-                <p className="text-slate-600 mb-4">
-                  The Wilson family reached out to us after discovering a water leak that had damaged their kitchen floor. Multiple plumbers couldn't identify the source of the leak, but our technician suspected it might be coming from their refrigerator's water line.
-                </p>
-                <p className="text-slate-600 mb-4">
-                  Upon thorough inspection, we discovered a hairline crack in the water supply line hidden behind the refrigerator. We not only replaced the damaged line but also installed a water leak detector to prevent future incidents.
-                </p>
-                <p className="text-slate-600 italic">
-                  "After weeks of frustration and thousands in damage, AppliancePro solved our mystery leak in under an hour. Their technician's attention to detail saved us from further damage and gave us peace of mind." - The Wilson Family
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Leave a Testimonial */}
       <section className="section">

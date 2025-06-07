@@ -59,7 +59,7 @@ const Navbar = ({ isScrolled }) => {
             onMouseEnter={() => setHoveredCategory('services')}
             onMouseLeave={() => setHoveredCategory(null)}
           >
-            <NavLink   to="/service" className="nav-link flex items-center">
+            <NavLink   to="/service" className="nav-link flex items-center" onClick={toggleMenu}>
               Services
               <ChevronDown className="ml-1 h-4 w-4" />
             </NavLink>
@@ -190,7 +190,9 @@ const Navbar = ({ isScrolled }) => {
                 className="flex items-center justify-between w-full nav-link"
                 onClick={() => setHoveredCategory(hoveredCategory === 'mobile-services' ? null : 'mobile-services')}
               >
-                <span>Services</span>
+                <NavLink to='/service' onClick={toggleMenu}>
+                  Services
+                </NavLink>
                 <ChevronDown className={`h-4 w-4 transition-transform ${
                   hoveredCategory === 'mobile-services' ? 'rotate-180' : ''
                 }`} />
