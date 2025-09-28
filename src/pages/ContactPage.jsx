@@ -8,7 +8,7 @@ const ContactPage = () => {
     <>
       <SeoHead
         title="Contact Us"
-        description="Get in touch with AppliancePro for all your appliance repair needs. 24/7 emergency service available."
+        description="Get in touch with CustomerServicesCenter for all your appliance repair needs. 24/7 emergency service available."
       />
 
       {/* Page Header */}
@@ -43,19 +43,16 @@ const ContactPage = () => {
                     <p className="text-slate-600">Customer Service:</p>
                     <p className="text-lg font-medium">
                       <a href="tel:+18002022413" className="text-blue-600 hover:text-blue-800">
-                        1800 202 2413
+                        1800 889 2801
+
                       </a>
                     </p>
-                    <p className="text-slate-600 mt-3">Emergency Service (24/7):</p>
-                    <p className="text-lg font-medium">
-                      <a href="tel:+18002022413" className="text-blue-600 hover:text-blue-800">
-                        1800 202 2413
-                      </a>
-                    </p>
+                    
+                
                   </div>
                 </div>
 
-                {/* Email */}
+                {/* Email
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-4">
                     <Mail className="h-6 w-6" />
@@ -75,7 +72,7 @@ const ContactPage = () => {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Address */}
                 
@@ -91,7 +88,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Address</h3>
                     <p className="text-slate-600">Main Office:</p>
-                    <p className="text-lg">Mumbai, Navi Mumbai, Thane</p>
+                    <p className="text-lg">Mumbai, Maharashtra.</p>
                   </div>
                 </div>
 

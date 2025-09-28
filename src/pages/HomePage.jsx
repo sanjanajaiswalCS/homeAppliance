@@ -43,7 +43,7 @@ const HomePage = () => {
     <>
       <SeoHead
         title="Home Appliance Repair Services"
-        description="AppliancePro offers professional repair services for AC, refrigerator, washing machine, and microwave oven. 24/7 emergency service available."
+        description="CustomerServicesCenter offers professional repair services for AC, refrigerator, washing machine, and microwave oven. 24/7 emergency service available."
       />
 
       <HeroSection 

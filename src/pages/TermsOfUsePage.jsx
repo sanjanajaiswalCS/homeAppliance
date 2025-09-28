@@ -6,7 +6,7 @@ const TermsOfUsePage = () => {
     <>
       <SeoHead
         title="Terms of Use"
-        description="Read the terms and conditions that govern your use of AppliancePro's website and services."
+        description="Read the terms and conditions that govern your use of CustomerServicesCenter's website and services."
       />
 
       {/* Page Header */}
@@ -28,19 +28,19 @@ const TermsOfUsePage = () => {
 
               <h2 className="text-2xl font-bold mb-4">1. Agreement to Terms</h2>
               <p className="mb-6">
-                These Terms of Use constitute a legally binding agreement between you and AppliancePro concerning your use of our website and services.
+                These Terms of Use constitute a legally binding agreement between you and CustomerServicesCenter concerning your use of our website and services.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">2. Services</h2>
               <p className="mb-6">
-                AppliancePro provides appliance repair services and may modify or discontinue any part of our services without notice.
+                CustomerServicesCenter provides appliance repair services and may modify or discontinue any part of our services without notice.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">3. Service Appointments and Cancellations</h2>
               <p className="mb-4">When scheduling a service appointment, you agree to:</p>
               <ul className="list-disc pl-6 mb-4">
                 <li>Provide accurate and complete information</li>
-                <li>Ensure someone over 18 is present</li>
+                <li>Ensure someone over Adult (18+ age) is present</li>
                 <li>Provide reasonable access to the appliance</li>
               </ul>
               <p className="mb-6">
@@ -61,7 +61,7 @@ const TermsOfUsePage = () => {
 
               <h2 className="text-2xl font-bold mb-4">5. Intellectual Property Rights</h2>
               <p className="mb-6">
-                All site content is owned by AppliancePro or licensors and is protected by intellectual property laws.
+                All site content is owned by CustomerServicesCenter or licensors and is protected by intellectual property laws.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">6. User Representations</h2>
@@ -85,17 +85,17 @@ const TermsOfUsePage = () => {
 
               <h2 className="text-2xl font-bold mb-4">8. Limitation of Liability</h2>
               <p className="mb-6">
-                AppliancePro is not liable for any damages resulting from your use of the site or services.
+                CustomerServicesCenter is not liable for any damages resulting from your use of the site or services.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">9. Indemnification</h2>
               <p className="mb-6">
-                You agree to indemnify AppliancePro for any losses resulting from your violation of these Terms.
+                You agree to indemnify CustomerServicesCenter for any losses resulting from your violation of these Terms.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">10. Governing Law and Jurisdiction</h2>
               <p className="mb-6">
-                These Terms are governed by U.S. law. Disputes must be resolved in U.S. courts.
+                These Terms are governed by India's law. Disputes must be resolved in Indian courts.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">11. Changes to These Terms</h2>
@@ -105,9 +105,9 @@ const TermsOfUsePage = () => {
 
               <h2 className="text-2xl font-bold mb-4">12. Contact Information</h2>
               <p>
-                <strong>Email:</strong> legal@appliancepro.com<br />
-                <strong>Phone:</strong> 1-800-123-4567<br />
-                <strong>Address:</strong> 123 Repair Street, Appliance City, AC 12345
+                
+                <strong>Phone:</strong> 1800 889 2801<br />
+                <strong>Address:</strong> Mumbai, Maharashtra
               </p>
             </div>
           </div>

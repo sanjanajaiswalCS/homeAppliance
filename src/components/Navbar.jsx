@@ -31,7 +31,7 @@ const Navbar = ({ isScrolled }) => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <Wrench className="text-blue-600 h-8 w-8" />
-          <span className="text-xl font-bold text-blue-600">AppliancePro</span>
+          <span className="text-xl font-bold text-blue-600">CustomerServicesCenter</span>
         </Link>
 
         {/* Desktop Navigation */}

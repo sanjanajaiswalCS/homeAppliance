@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Wrench className="text-blue-400 h-8 w-8" />
-              <span className="text-xl font-bold text-white">AppliancePro</span>
+              <span className="text-xl font-bold text-white">CustomerServicesCenter</span>
             </div>
             <p className="text-slate-300 mb-4">
               Your trusted partner for professional appliance repair services. Quality service guaranteed.
@@ -143,26 +143,26 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-slate-300">Call Us:</p>
-                  <a href="tel:+18002022413" className="text-white hover:text-blue-400 transition-colors">
-                    18002022413
+                  <a href="tel:+18008892801" className="text-white hover:text-blue-400 transition-colors">
+                    1800 889 2801
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
+                {/* <Mail className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" /> */}
+                {/* <div>
                   <p className="text-slate-300">Email:</p>
                   <a href="mailto:at@atyourservicesupport.com" className="text-white hover:text-blue-400 transition-colors">
                     at@atyourservicesupport.com
                   </a>
-                </div>
+                </div> */}
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-slate-300">Address:</p>
                   <p className="text-white">
-                    Mumbai
+                    Mumbai, Maharashtra
                   </p>
                 </div>
               </li>
@@ -185,17 +185,17 @@ const Footer = () => {
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4"> Refund Policy</h3>
             <p className="text-gray-400">
-              At AtYourServiceSupport.com, refunds are available if we cannot provide a scheduled service or fail to meet agreed-upon standards.
+              At customerservicescenter.com, refunds are available if we cannot provide a scheduled service or fail to meet agreed-upon standards.
 
               No refunds will be issued for completed services, customer no-shows, or failure to meet service requirements.
 
-              Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [1800-202-2413] for assistance.
+              Refund requests must be made within 2 days via email and will be processed within 7 working days. Contact us at [1800-889-2801] for assistance.
             </p>
           </div>
 
           <div className="border-t border-gray-800 pt-8">
             <p className="text-sm text-gray-400 mb-4">
-              Disclaimer: At Your Service Support is an independent service provider and not an authorized dealer or representative of any brand. All trademarks and brand names belong to their respective owners.
+              Disclaimer: Customer Services Center is an independent service provider and not an authorized dealer or representative of any brand. All trademarks and brand names belong to their respective owners.
             </p>
             <p className="text-sm text-gray-400 mb-4">
               Our services are not affiliated with or endorsed by any manufacturer, and we are not responsible for warranty voidance or brand-specific claims. For official support, please contact the authorized service center.
@@ -204,7 +204,7 @@ const Footer = () => {
               All products are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation/endorsement by them with us.
             </p>
             <p className="text-sm text-gray-500">
-              Copyright © At Your Service Support {new Date().getFullYear()} | Powered by At Your Service Support
+              Copyright © Customer Services Center {new Date().getFullYear()} | Powered by Customer Services Center
             </p>
           </div>
         </div>

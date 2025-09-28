@@ -8,7 +8,7 @@ const SeoHead = ({
   ogType = 'website',
   ogImage = '/og-image.jpg',
 }) => {
-  const fullTitle = `${title} | AppliancePro`;
+  const fullTitle = `${title} | CustomerServicesCenter`;
 
   return (
     <Helmet>

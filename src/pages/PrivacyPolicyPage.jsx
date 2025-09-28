@@ -6,7 +6,7 @@ const PrivacyPolicyPage = () => {
     <>
       <SeoHead
         title="Privacy Policy"
-        description="Learn about AppliancePro's privacy policy and how we protect your personal information."
+        description="Learn about CustomerServicesCenter's privacy policy and how we protect your personal information."
       />
 
       {/* Page Header */}
@@ -30,7 +30,7 @@ const PrivacyPolicyPage = () => {
 
               <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
               <p className="mb-4">
-                AppliancePro ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or communicate with us.
+                CustomerServicesCenter ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or communicate with us.
               </p>
               <p className="mb-6">
                 Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access our services.
@@ -128,9 +128,9 @@ const PrivacyPolicyPage = () => {
                 If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:
               </p>
               <p>
-                <strong>Email:</strong> privacy@appliancepro.com<br />
-                <strong>Phone:</strong> 1-800-123-4567<br />
-                <strong>Address:</strong> 123 Repair Street, Appliance City, AC 12345
+                
+                <strong>Phone:</strong> 1800 889 2801<br />
+                <strong>Address:</strong> Mumbai, Maharashtra
               </p>
             </div>
           </div>

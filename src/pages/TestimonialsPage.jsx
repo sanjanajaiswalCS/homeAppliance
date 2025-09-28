@@ -9,7 +9,7 @@ const TestimonialsPage = () => {
     <>
       <SeoHead
         title="Customer Testimonials"
-        description="Read what our customers have to say about AppliancePro's repair services. Real reviews from satisfied customers."
+        description="Read what our customers have to say about CustomerServicesCenter's repair services. Real reviews from satisfied customers."
       />
 
       {/* Page Header */}

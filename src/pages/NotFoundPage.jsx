@@ -8,7 +8,7 @@ const NotFoundPage = () => {
     <>
       <SeoHead
         title="Page Not Found"
-        description="The page you're looking for doesn't exist. Return to the AppliancePro homepage."
+        description="The page you're looking for doesn't exist. Return to the CustomerServicesCenter homepage."
       />
 
       <section className="section flex items-center min-h-[60vh]">
