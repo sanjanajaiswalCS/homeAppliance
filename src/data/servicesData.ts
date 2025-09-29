@@ -62,7 +62,7 @@ export const servicesData= {
     "Pigeon"
   ],
   "CCTV": [
-
+    "Xioami"
   ]
 };
 
@@ -71,7 +71,8 @@ export const serviceTypeMap: Record<string, string> = {
   "ac-repair": "AC Repair",
   "refrigerator-repair": "Refrigerator Repair",
   "washing-machine-repair": "Washing Machine Repair",
-  "microwave-oven-repair": "Microwave Oven Repair"
+  "microwave-oven-repair": "Microwave Oven Repair",
+  "kitchen-chimney": "Kitchen Chimney Cleaning & Maintenance",
 };
 
 // Function to convert service type and brand to URL format

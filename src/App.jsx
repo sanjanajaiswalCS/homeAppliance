@@ -22,7 +22,7 @@ function App() {
         <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="terms-of-use" element={<TermsOfUsePage />} />
         <Route path="services/:serviceType" element={<ServicePage />} />
-        <Route path="services/:serviceType/:brand" element={<ServiceBrandPage />} />
+      {/* <Route path="services/:serviceType/:brand" element={<ServiceBrandPage />} /> */}
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/service" element={<Service />} />
       </Route>

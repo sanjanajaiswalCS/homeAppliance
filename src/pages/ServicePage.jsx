@@ -30,6 +30,30 @@ const serviceInfo = {
     brands: "We provide services for models across major brands like LG, Samsung, Voltas, Daikin, and others (note: not affiliated with these brands).",
     icon: "❄️"
   },
+  cctv: {
+    title: "CCTV Installation & Repair Services",
+    description: "Professional CCTV camera installation, maintenance, and repair services. Secure your home or business with our expert surveillance solutions including camera setup, DVR/NVR configuration, and system troubleshooting.",
+    hero: "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg",
+    benefits: [
+      "CCTV Camera Installation",
+      "DVR/NVR Setup & Configuration",
+      "Camera Positioning & Alignment",
+      "Wiring & Cable Management",
+      "Remote Viewing Setup",
+      "System Upgrades & Expansion"
+    ],
+    symptoms: [
+      "No video display or recording",
+      "Camera not powering on",
+      "Poor image quality or distortion",
+      "DVR/NVR not responding",
+      "Loose or damaged wiring",
+      "Remote access not working",
+      "Night vision not functioning"
+    ],
+    brands: "We work with all major CCTV brands including Hikvision, Dahua, CP Plus, Honeywell, Samsung, and others.",
+    icon: "📹"
+  },
   refrigerator: {
     title: "Refrigerator Repair Services",
     description: "Quick, Reliable Refrigerator Repairs. Facing cooling issues, frost buildup, or unusual noises? Our team ensures effective diagnosis and solutions for single, double-door, and side-by-side refrigerators.",
@@ -88,6 +112,28 @@ const serviceInfo = {
       "Noisy operation"
     ]
   },
+  chimney: {
+    title: "Kitchen Chimney Cleaning & Maintenance",
+    description: "Comprehensive chimney cleaning, filter replacement, and maintenance to keep your kitchen smoke-free and hygienic.",
+    hero: "https://images.pexels.com/photos/3739387/pexels-photo-3739387.jpeg",
+    benefits: [
+      "Chimney suction and filter cleaning",
+      "Deep cleaning & oil residue removal",
+      "Motor & fan servicing",
+      "Duct pipe inspection",
+      "Replacement of worn-out filters"
+    ],
+    symptoms: [
+      "Excessive smoke in kitchen",
+      "Chimney suction not working",
+      "Unusual noise while operating",
+      "Oil dripping from filters",
+      "Bad smell from chimney"
+    ],
+    brands: "We service all major kitchen chimney brands like Faber, Elica, Hindware, Glen, Kaff, and others.",
+    icon: "🍳"
+  },
+  
   others: {
     title: "Other Appliance Repairs",
     description: "We also provide reliable repair services for other appliances like kitchen chimneys, exhaust fans, and CCTV systems.",
@@ -117,7 +163,12 @@ const ServicePage = () => {
   if (serviceType?.includes('refrigerator')) currentService = serviceInfo.refrigerator;
   else if (serviceType?.includes('washing')) currentService = serviceInfo.washing;
   else if (serviceType?.includes('microwave')) currentService = serviceInfo.microwave;
-
+  else if (serviceType?.includes('cctv')) {
+    currentService = serviceInfo.cctv;
+  }
+  else if (serviceType?.includes('chimney')) {
+    currentService = serviceInfo.chimney;
+  }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [serviceType]);

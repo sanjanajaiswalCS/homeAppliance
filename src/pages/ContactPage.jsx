@@ -42,7 +42,7 @@ const ContactPage = () => {
                     <h3 className="text-lg font-semibold mb-1">Phone</h3>
                     <p className="text-slate-600">Customer Service:</p>
                     <p className="text-lg font-medium">
-                      <a href="tel:+18002022413" className="text-blue-600 hover:text-blue-800">
+                      <a href="tel:+18008892801" className="text-blue-600 hover:text-blue-800">
                         1800 889 2801
 
                       </a>
