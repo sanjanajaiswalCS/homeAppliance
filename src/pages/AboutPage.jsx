@@ -39,7 +39,7 @@ const AboutPage = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-custom">
               <img 
-                src="https://images.pexels.com/photos/8961251/pexels-photo-8961251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="https://static.vecteezy.com/system/resources/previews/007/933/236/non_2x/about-us-button-about-us-text-template-for-website-about-us-icon-flat-style-vector.jpg" 
                 alt="CustomerServicesCenter team" 
                 className="w-full h-auto"
               />

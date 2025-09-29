@@ -79,10 +79,10 @@ const Navbar = ({ isScrolled }) => {
                       className="flex items-center justify-between px-4 py-2 hover:bg-slate-50 hover:text-blue-600"
                     >
                       <span>{serviceType}</span>
-                      <ChevronRight className="h-4 w-4" />
+                     { /*<ChevronRight className="h-4 w-4" */}
                     </Link>
 
-                    {hoveredService === serviceType && (
+                    {/* {hoveredService === serviceType && (
                       <div className="absolute top-0 left-full w-64 bg-white shadow-lg rounded-md py-2 ml-1 z-50">
                         {servicesData[serviceType].map((brand) => (
                           <Link
@@ -96,7 +96,7 @@ const Navbar = ({ isScrolled }) => {
                           </Link>
                         ))}
                       </div>
-                    )}
+                    )}*/}
                   </div>
                 ))}
               </div>

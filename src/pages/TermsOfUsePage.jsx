@@ -106,7 +106,9 @@ const TermsOfUsePage = () => {
               <h2 className="text-2xl font-bold mb-4">12. Contact Information</h2>
               <p>
                 
-                <strong>Phone:</strong> 1800 889 2801<br />
+              <strong>Phone:</strong> <a href="tel:+18008892801" className="t text-black hover:text-blue-400 transition-colors">
+                    1800 889 2801
+                  </a> <br />
                 <strong>Address:</strong> Mumbai, Maharashtra
               </p>
             </div>
