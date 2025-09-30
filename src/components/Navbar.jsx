@@ -186,7 +186,7 @@ const Navbar = ({ isScrolled }) => {
 
             {/* Mobile Services Menu */}
             
-               {/* Mobile Services Menu */}
+             
 <div className="relative">
   <button
     className="flex items-center justify-between w-full nav-link"
@@ -196,7 +196,15 @@ const Navbar = ({ isScrolled }) => {
       )
     }
   >
-    Services
+    <NavLink
+                to="/service"
+                className=""
+                onClick={toggleMenu} // optional if you want menu to close
+              >
+                Services
+    </NavLink>
+
+    
     <ChevronDown
       className={`ml-1 h-4 w-4 transition-transform ${
         hoveredCategory === "mobile-services" ? "rotate-180" : ""
