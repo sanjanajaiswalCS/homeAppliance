@@ -7,7 +7,7 @@ const services = [
     type: 'ac-repair-&-maintenance',
     title: 'Air Conditioner Repair & Service',
     description: 'Efficient AC Repair, Servicing & Installation.',
-    image: 'https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg',
+    image: 'https://content.jdmagicbox.com/v2/comp/kolkata/b1/033pxx33.xx33.190103193514.i2b1/catalogue/airtech-enterprise-tiljala-kolkata-ac-dealers-daikin-8tvrib9sq3.jpg',
   },
   {
     type: 'refrigerator-repairx',
@@ -19,7 +19,7 @@ const services = [
     type: 'microwave',
     title: 'Microwave Oven Repair',
     description: 'Microwave Not Heating? We Can Help.',
-    image: 'https://images.pexels.com/photos/7545581/pexels-photo-7545581.jpeg',
+    image: 'https://content.jdmagicbox.com/comp/def_content/microwave-oven-repair-and-services/screenshot-7-microwave-oven-repair-and-services-7-b06ts.jpg',
   },
   {
     type: 'washing',
@@ -31,7 +31,7 @@ const services = [
     type: 'others',
     title: 'Other Appliance Repairs',
     description: 'Reliable repair services for other appliances.',
-    image: 'https://images.pexels.com/photos/3739387/pexels-photo-3739387.jpeg',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/491723607/BT/BL/LL/74511152/kitchen-chimney-repairing-service-500x500.png',
   },
 ];
 

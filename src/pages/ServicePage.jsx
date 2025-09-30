@@ -11,7 +11,7 @@ const serviceInfo = {
   ac: {
     title: "Air Conditioner Repair & Service",
     description: "Efficient AC Repair, Servicing & Installation. Is your AC not cooling properly or making noise? Our technicians handle split and window AC repairs, gas refills, routine servicing, and installations with care and precision.",
-    hero: "https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg",
+    hero: "https://content.jdmagicbox.com/v2/comp/kolkata/b1/033pxx33.xx33.190103193514.i2b1/catalogue/airtech-enterprise-tiljala-kolkata-ac-dealers-daikin-8tvrib9sq3.jpg",
     benefits: [
       "Jet AC Servicing",
       "Split & Window AC Installation",
@@ -77,7 +77,7 @@ const serviceInfo = {
   microwave: {
     title: "Microwave Oven Repair",
     description: "Microwave Not Heating? We Can Help. From heating problems to electrical faults, we provide complete microwave repairs for solo, grill, and convection models.",
-    hero: "https://images.pexels.com/photos/7545581/pexels-photo-7545581.jpeg",
+    hero: "https://content.jdmagicbox.com/comp/def_content/microwave-oven-repair-and-services/screenshot-7-microwave-oven-repair-and-services-7-b06ts.jpg",
     benefits: [
       "Magnetron Replacement",
       "Turntable & Motor Issues",
@@ -115,7 +115,7 @@ const serviceInfo = {
   chimney: {
     title: "Kitchen Chimney Cleaning & Maintenance",
     description: "Comprehensive chimney cleaning, filter replacement, and maintenance to keep your kitchen smoke-free and hygienic.",
-    hero: "https://images.pexels.com/photos/3739387/pexels-photo-3739387.jpeg",
+    hero: "https://5.imimg.com/data5/SELLER/Default/2025/2/491723607/BT/BL/LL/74511152/kitchen-chimney-repairing-service-500x500.png",
     benefits: [
       "Chimney suction and filter cleaning",
       "Deep cleaning & oil residue removal",
@@ -137,7 +137,7 @@ const serviceInfo = {
   others: {
     title: "Other Appliance Repairs",
     description: "We also provide reliable repair services for other appliances like kitchen chimneys, exhaust fans, and CCTV systems.",
-    hero: "https://images.pexels.com/photos/3739387/pexels-photo-3739387.jpeg",
+    hero: "https://5.imimg.com/data5/SELLER/Default/2025/2/491723607/BT/BL/LL/74511152/kitchen-chimney-repairing-service-500x500.png",
     benefits: [
       "Chimney suction and filter cleaning",
       "Exhaust fan repair and maintenance",
