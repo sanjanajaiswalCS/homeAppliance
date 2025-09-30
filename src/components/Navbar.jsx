@@ -185,52 +185,43 @@ const Navbar = ({ isScrolled }) => {
             </NavLink>
 
             {/* Mobile Services Menu */}
-            <div className="relative">
-              <button
-                className="flex items-center justify-between w-full nav-link"
-                onClick={() => setHoveredCategory(hoveredCategory === 'mobile-services' ? null : 'mobile-services')}
-              >
-                <NavLink to='/service' onClick={toggleMenu}>
-                  Services
-                </NavLink>
-                <ChevronDown className={`h-4 w-4 transition-transform ${
-                  hoveredCategory === 'mobile-services' ? 'rotate-180' : ''
-                }`} />
-              </button>
+            
+               {/* Mobile Services Menu */}
+<div className="relative">
+  <button
+    className="flex items-center justify-between w-full nav-link"
+    onClick={() =>
+      setHoveredCategory(
+        hoveredCategory === "mobile-services" ? null : "mobile-services"
+      )
+    }
+  >
+    Services
+    <ChevronDown
+      className={`ml-1 h-4 w-4 transition-transform ${
+        hoveredCategory === "mobile-services" ? "rotate-180" : ""
+      }`}
+    />
+  </button>
 
-              {hoveredCategory === 'mobile-services' && (
-                <div className="pl-4 mt-2 space-y-2">
-                  {Object.keys(servicesData).map((serviceType) => (
-                    <div key={serviceType} className="relative">
-                      <button
-                        className="flex items-center justify-between w-full nav-link"
-                        onClick={() => setHoveredService(hoveredService === serviceType ? null : serviceType)}
-                      >
-                        <span>{serviceType}</span>
-                        <ChevronRight className="h-4 w-4" />
-                      </button>
+  {hoveredCategory === "mobile-services" && (
+    <div className="pl-4 mt-2 space-y-2">
+      {Object.keys(servicesData).map((serviceType) => (
+        <NavLink
+          key={serviceType}
+          to={`/services/${serviceType.toLowerCase().replace(/\s+/g, "-")}`}
+          className="block nav-link"
+          onClick={toggleMenu} // ✅ closes menu after navigation
+        >
+          {serviceType}
+        </NavLink>
+      ))}
+    </div>
+  )}
+</div>
 
-                      {hoveredService === serviceType && (
-                        <div className="pl-4 mt-2 space-y-2">
-                          {servicesData[serviceType].map((brand) => (
-                            <Link
-                              key={brand}
-                              to={`/services/${serviceType.toLowerCase().replace(/\s+/g, '-')}/${brand.toLowerCase().replace(/\s+/g, '-')}`}
-                              className="block nav-link"
-                              onClick={toggleMenu}
-                            >
-                              {customLabels[serviceType]
-                                ? `${brand} ${customLabels[serviceType].replace(/Service$/, '')} Service`
-                                : `${brand} Repair Service`}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+              
+           
 
             <NavLink
               to="/contact"
@@ -280,8 +271,10 @@ const Navbar = ({ isScrolled }) => {
             </a>
           </div>
         </div>
+     
       )}
     </header>
+    
   );
 };
 
