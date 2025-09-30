@@ -236,14 +236,14 @@ const ServicePage = () => {
             >
               <Link 
                 to="/contact" 
-                className="btn-primary flex items-center justify-center gap-2"
+                className="btn-primary flex items-center justify-center rounded-xl p-4  gap-2"
               >
                 <Calendar size={18} />
                 Schedule a Repair
               </Link>
               <a 
                 href="tel:+18001234567" 
-                className="btn-secondary flex items-center justify-center gap-2"
+                className="btn-secondary flex items-center p-4 rounded-xl justify-center gap-2"
               >
                 <Phone size={18} />
                 Emergency Service
