@@ -53,6 +53,18 @@ const Service = () => {
           </div>
         ))}
       </div>
+      <div className="text-center mb-12 mt-20">
+          <h2 className="text-3xl font-bold mb-4">
+            COMPANY NAME: Venkatesh Enterprises
+          </h2>
+         <div>
+         OWNER NAME:Sumit Harinath Tiwari MSME 
+         </div>
+         <div>
+         REGISTRATION NUMBER:UDYAM-MH-18-0440333
+         </div>
+          
+        </div>
     </div>
   );
 };
