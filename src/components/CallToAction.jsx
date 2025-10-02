@@ -14,7 +14,7 @@ const CallToAction = ({
         <p className="text-blue-100 mb-8 max-w-2xl mx-auto">{description}</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-xl mx-auto">
           <a
-            href={`tel:+${phoneNumber.replace(/\D/g, '')}`}
+            href={`tel:${phoneNumber.replace(/\D/g, '')}`}
             className="btn bg-white text-blue-600 hover:bg-blue-50 flex-1"
           >
             <Phone className="mr-2 h-5 w-5" />
