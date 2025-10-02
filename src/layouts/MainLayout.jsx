@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
+import { FiPhoneCall } from 'react-icons/fi'; // phone icon
 
 const MainLayout = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,6 +25,15 @@ const MainLayout = () => {
       </main>
       <Footer />
       <ScrollToTop />
+
+      {/* Floating Call Button */}
+      <a
+        href="tel:18008892801"
+        className="fixed bottom-5 right-5 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-110"
+        aria-label="Call Now"
+      >
+        <FiPhoneCall size={24} />
+      </a>
     </div>
   );
 };
