@@ -27,12 +27,12 @@ const services = [
     description: 'Smooth Laundry Starts Here.',
     image: 'https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg',
   },
-  {
-    type: 'others',
-    title: 'Other Appliance Repairs',
-    description: 'Reliable repair services for other appliances.',
-    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/491723607/BT/BL/LL/74511152/kitchen-chimney-repairing-service-500x500.png',
-  },
+  // {
+  //   type: 'others',
+  //   title: 'Other Appliance Repairs',
+  //   description: 'Reliable repair services for other appliances.',
+  //   image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/491723607/BT/BL/LL/74511152/kitchen-chimney-repairing-service-500x500.png',
+  // },
 ];
 
 const Service = () => {
