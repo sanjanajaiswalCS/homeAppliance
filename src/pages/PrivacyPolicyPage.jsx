@@ -129,7 +129,7 @@ const PrivacyPolicyPage = () => {
               </p>
               <p>
                 
-                <strong>Phone:</strong> <a href="tel:+18008892801" className="t text-blue-400 transition-colors">
+                <strong>Phone:</strong> <a href="tel:18008892801" className="t text-blue-400 transition-colors">
                     1800 889 2801
                   </a> <br />
                 <strong>Address:</strong> Mumbai, Maharashtra

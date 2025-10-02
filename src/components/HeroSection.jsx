@@ -51,7 +51,7 @@ const HeroSection = ({
               <Link to="/contact" className="btn btn-primary">
                 Book a Service
               </Link>
-              <a href="tel:+18008892801" className="btn bg-white text-blue-600 hover:bg-blue-50">
+              <a href="tel:18008892801" className="btn bg-white text-blue-600 hover:bg-blue-50">
                 Call Now
               </a>
             </div>

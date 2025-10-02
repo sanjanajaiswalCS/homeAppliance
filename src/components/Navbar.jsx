@@ -140,7 +140,7 @@ const Navbar = ({ isScrolled }) => {
 
         {/* Call Button */}
         <a
-          href="tel:+18008892801"
+          href="tel:18008892801"
           className="hidden md:flex items-center gap-2 btn btn-primary"
         >
           <Phone className="h-4 w-4" />
@@ -270,7 +270,7 @@ const Navbar = ({ isScrolled }) => {
 
             {/* Mobile Call Button */}
             <a
-              href="tel:+18008892801"
+              href="tel:18008892801"
               className="flex items-center justify-center gap-2 btn btn-primary w-full"
               onClick={toggleMenu}
             >

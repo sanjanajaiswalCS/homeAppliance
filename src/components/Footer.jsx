@@ -143,7 +143,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-slate-300">Call Us:</p>
-                  <a href="tel:+18008892801" className="text-white hover:text-blue-400 transition-colors">
+                  <a href="tel:18008892801" className="text-white hover:text-blue-400 transition-colors">
                     1800 889 2801
                   </a>
                 </div>
