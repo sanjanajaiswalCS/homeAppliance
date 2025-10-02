@@ -242,7 +242,7 @@ const ServicePage = () => {
                 Schedule a Repair
               </Link>
               <a 
-                href="tel:18001234567" 
+                href="tel:18008892801" 
                 className="btn-secondary flex items-center p-4 rounded-xl justify-center gap-2"
               >
                 <Phone size={18} />
